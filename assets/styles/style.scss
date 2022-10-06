@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'NetflixMedium';
+    src: url(../fonts/NetflixSans-Medium.otf), url("/assets/fonts/NetflixSans-Medium.otf") format("otf");
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'NetflixMedium';
+}
+
+body {
+    background-color: #2A2634;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    color: #FFF;
+    font-size: 3.2vmin;
+    font-weight: bold;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        color: transparent;
+        background-image: linear-gradient(90deg, #9572fc, #43e7ad 50%, #e1d55d);
+        background-clip: text;
+    }
+}
+
+main {
+    width: 100vw;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .profiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+
+        .card-profiles {
+            width: 200px;
+            height: 200px;
+            border-radius: 4px;
+            background: url("https://pbs.twimg.com/card_img/1577559080113410048/MZoGA8xS?format=png&name=360x360");
+            background-size: cover;
+            margin: 16px;
+            cursor: pointer;
+        }
+
+        .card-profiles:hover {
+            border: 4px solid #43e7ad;
+        }
+
+        .card-notes {
+            font-size: 2.4vmin;
+            width: clamp(84px, 100%, 200px);
+            text-align: center;
+        }
+    }
+}
