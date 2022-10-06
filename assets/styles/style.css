@@ -62,7 +62,9 @@ main .profiles .card-profiles:hover {
   border: 4px solid #43e7ad;
 }
 main .profiles .card-notes {
-  font-size: 2.4vmin;
-  width: clamp(84px, 100%, 200px);
+  font-size: 1.8vmin;
+  width: 100%;
   text-align: center;
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.8);
 }/*# sourceMappingURL=style.css.map */
