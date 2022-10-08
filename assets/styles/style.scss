@@ -48,14 +48,13 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 100vw;
 
         .card-profiles,
         .card-add-profiles {
             width: 200px;
             height: 200px;
             border-radius: 4px;
-            background: url("https://pbs.twimg.com/card_img/1577559080113410048/MZoGA8xS?format=png&name=360x360");
+            // background: url("https://pbs.twimg.com/card_img/1577559080113410048/MZoGA8xS?format=png&name=360x360");
             background-size: cover;
             margin: 16px;
             cursor: pointer;
@@ -122,3 +121,9 @@ button {
     position: absolute;
     visibility: hidden;
 }
+
+.profiles-row {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+} 

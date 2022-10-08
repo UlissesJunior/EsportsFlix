@@ -21,7 +21,8 @@ function CreateProfile (nome, img) {
     nomeItem.classList.add("card-notes")
     nomeItem.innerHTML = nome
 
-    const div = document.createElement('div')
+    const div = document.createElement('img')
+    div.src = img
     const parents = div.classList.add("card-profiles")
     
     novoItem.insertBefore(div, parents)
