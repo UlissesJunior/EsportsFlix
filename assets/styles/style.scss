@@ -50,7 +50,8 @@ main {
         justify-content: center;
         width: 100vw;
 
-        .card-profiles {
+        .card-profiles,
+        .card-add-profiles {
             width: 200px;
             height: 200px;
             border-radius: 4px;
@@ -60,8 +61,17 @@ main {
             cursor: pointer;
         }
 
+        .card-add-profiles {
+            background: url("https://pbs.twimg.com/profile_images/1567906020831150081/oJ7mKaaj_400x400.jpg");
+            background-size: cover;
+        }
+
         .card-profiles:hover {
             border: 4px solid #43e7ad;
+        }
+
+        .card-add-profiles:hover {
+            border: 4px solid #9572fc;
         }
 
         .card-notes {
@@ -72,4 +82,43 @@ main {
             color: rgba(256, 256, 256, 0.8);
         }
     }
+}
+
+.menu-open {
+    width: 30%;
+    height: 65%;
+    border: 4px solid #9572fc;
+    border-radius: 8px;
+    background-color: #2A2634;
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    // box-shadow: 100px 100px 1000px 1000px #9572fc;
+
+    input,
+    button {
+        font-size: 1.6vmin;
+        width: 85%;
+        height: 10%;
+        padding: 8px;
+        border-radius: 8px;
+        outline: none;
+        visibility: visible;
+        position: relative;
+    }
+
+    button {
+        background-color: #9572fc;
+        color: #FFF;
+    }
+}
+
+input,
+button {
+    position: absolute;
+    visibility: hidden;
 }
