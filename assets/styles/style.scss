@@ -48,6 +48,7 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        max-width: 80vw;
 
         .card-profiles,
         .card-add-profiles {
@@ -125,5 +126,10 @@ button {
 .profiles-row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100vw;
 } 
+
+// .profiles:first-child {
+//     // overflow-x: scroll;
+// }
