@@ -48,14 +48,14 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 100vw;
+        max-width: 80vw;
 
         .card-profiles,
         .card-add-profiles {
             width: 200px;
             height: 200px;
             border-radius: 4px;
-            background: url("https://pbs.twimg.com/card_img/1577559080113410048/MZoGA8xS?format=png&name=360x360");
+            // background: url("https://pbs.twimg.com/card_img/1577559080113410048/MZoGA8xS?format=png&name=360x360");
             background-size: cover;
             margin: 16px;
             cursor: pointer;
@@ -85,7 +85,7 @@ main {
 }
 
 .menu-open {
-    width: 30%;
+    width: 600px;
     height: 65%;
     border: 4px solid #9572fc;
     border-radius: 8px;
@@ -122,3 +122,14 @@ button {
     position: absolute;
     visibility: hidden;
 }
+
+.profiles-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+} 
+
+// .profiles:first-child {
+//     // overflow-x: scroll;
+// }

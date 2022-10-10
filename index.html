@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/styles/style.css">
-        <title>EsportsFlix</title>
-    </head>
-    <body>
-        <nav>
-            <span>Esports</span>Flix
-        </nav>
-        <main>
-            <div id="AddProfile">
-                <input id="nome" placeholder="Nome">
-                <input id="img" placeholder="Imagem">
-                <button id="form" onclick="SendProfile()">Salvar</button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>EsportsFlix</title>
+</head>
+
+<body>
+    <nav>
+        <span>Esports</span>Flix
+    </nav>
+    <main>
+        <div id="AddProfile">
+            <input id="nome" placeholder="Nome">
+            <input id="img" placeholder="Imagem">
+            <button id="form" onclick="SendProfile()">Salvar</button>
+        </div>
+        <div class="profiles-row">
+        <div class="profiles">
+            <!-- Adicionar Overflow-x para responsivo -->
+            <div class="profiles-column">
+                <img class="card-profiles"
+                    src="https://pbs.twimg.com/card_img/1577559080113410048/MZoGA8xS?format=png&name=360x360"></img>
+                <div class="card-notes">Casimiro</div>
             </div>
-             <div class="profiles"><!-- Adicionar Overflow-x para responsivo -->
-                <div class="profiles-column">
-                    <div class="card-profiles"></div>
-                    <div class="card-notes">Casimiro</div>
-                </div>
-                <div class="profiles-column">
-                    <div class="card-profiles"></div>
-                    <div class="card-notes">Casimiro</div>
-                </div>
-                <div class="profiles-column">
-                    <div class="card-profiles"></div>
-                    <div class="card-notes">Casimiro</div>
-                </div>
-                <div class="profiles-column">
-                    <div class="card-profiles"></div>
-                    <div class="card-notes">Casimiro</div>
-                </div>
-                <div class="profiles-column">
-                    <div onclick="EditMenu()" class="card-add-profiles"></div>
-                </div>
+            <div class="profiles-column">
+                <img class="card-profiles"
+                    src="https://yt3.ggpht.com/I1py1EE4zLD-87jf-DCvnS5KJavE3CwXot1DSwPjh2TD-bXKgIwCQuzt4jXdZvgbK_VYzf801g=s900-c-k-c0x00ffffff-no-rj"></img>
+                <div class="card-notes">Loud Thur</div>
             </div>
-        </main>
-    </body>
+            <div class="profiles-column">
+                <img class="card-profiles"
+                    src="https://yt3.ggpht.com/UOjs_eZppMcRds-uiEq2poTcQJSMWMYunAGTn5leF3tIXBaNZGxjy17fq2T1Frn-xkmyTZDA9g=s900-c-k-c0x00ffffff-no-rj"></img>
+                <div class="card-notes">Loud Coringa</div>
+            </div>
+            <!-- <div class="profiles-column">
+                    <img class="card-profiles" src="https://pbs.twimg.com/media/FVq2i4qWUAErcAm?format=jpg&name=large"></img>
+                    <div class="card-notes">Bakzera</div>
+                </div> -->
+
+        </div>
+        <div class="profiles">
+            <div class="profiles-column">
+                <div onclick="EditMenu()" class="card-add-profiles"></div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+
 </html>
 <script src="assets/js/script.js"></script>
