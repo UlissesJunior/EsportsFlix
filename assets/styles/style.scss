@@ -16,15 +16,6 @@
     display: none;
 }
 
-// ::-webkit-scrollbar-track {
-//     background: #2A2634;
-// }
-
-// ::-webkit-scrollbar-thumb {
-//     background-color: #43e7ad;
-//     border-radius: 4px;
-// }
-
 body {
     background-color: #2A2634;
     width: 100vw;
@@ -57,18 +48,19 @@ main {
     align-items: center;
     flex-direction: column;
 
+    .profiles:first-child {
+        overflow-x: scroll;
+    }
     .profiles {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        max-width: 80vw;
+        justify-content: start;
 
         .card-profiles,
         .card-add-profiles {
             width: 200px;
             height: 200px;
             border-radius: 4px;
-            // background: url("https://pbs.twimg.com/card_img/1577559080113410048/MZoGA8xS?format=png&name=360x360");
             background-size: cover;
             margin: 16px;
             cursor: pointer;
@@ -110,7 +102,6 @@ main {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    // box-shadow: 100px 100px 1000px 1000px #9572fc;
 
     input,
     button {
@@ -143,7 +134,7 @@ button {
     width: 100vw;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 912px) {
     main {
         .profiles-row {
             display: grid;

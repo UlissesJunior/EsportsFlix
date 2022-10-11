@@ -47,11 +47,13 @@ main {
   align-items: center;
   flex-direction: column;
 }
+main .profiles:first-child {
+  overflow-x: scroll;
+}
 main .profiles {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  max-width: 80vw;
+  justify-content: start;
 }
 main .profiles .card-profiles,
 main .profiles .card-add-profiles {
@@ -123,7 +125,7 @@ button {
   width: 100vw;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 912px) {
   main .profiles-row {
     display: grid;
     height: 100%;
